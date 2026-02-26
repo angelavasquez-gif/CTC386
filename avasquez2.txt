@@ -1,0 +1,32 @@
+#Angela Vasquez
+#lab #2
+#Ask a user to enter 6 binary bits and convert them to a decimal.
+
+
+bit1 = int(input("Enter bit 1 (Most Significant bit): "))
+bit2 = int(input("Enter bit 2: "))
+bit3 = int(input("Enter bit 3: "))
+bit4 = int(input("Enter bit 4: "))
+bit5 = int(input("Enter bit 5: "))
+bit6 = int(input("Enter bit 6 (Least Significant bit): "))
+
+# Calculate decimal value manually
+decimal = (bit1 * 32) + \
+          (bit2 * 16) + \
+          (bit3 * 8)  + \
+          (bit4 * 4)  + \
+          (bit5 * 2)  + \
+          (bit6 * 1)
+
+# Validate input
+if ((bit1 == 0 or bit1 == 1) and
+    (bit2 == 0 or bit2 == 1) and
+    (bit3 == 0 or bit3 == 1) and
+    (bit4 == 0 or bit4 == 1) and
+    (bit5 == 0 or bit5 == 1) and
+    (bit6 == 0 or bit6 == 1)):
+
+    print("Your decimal number is", decimal)
+
+else:
+    print("You must have made a mistake.")
